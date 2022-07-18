@@ -4,7 +4,7 @@ import Header from '../../components/header/header';
 function LoginScreen(): JSX.Element {
   return (
     <div className="page page--gray page--login">
-      <Header isAuthorised={false}/>
+      <Header withNav={false}/>
 
       <main className="page__main page__main--login">
         <div className="page__login-container container">

@@ -1,9 +1,14 @@
 import React from 'react';
+import {useParams} from 'react-router-dom';
 import PlaceCard from '../../components/place-card/place-card';
 import ReviewCard from '../../components/review-card/review-card';
 import Header from '../../components/header/header';
 
 function PropertyScreen(): JSX.Element {
+  const params = useParams();
+  // eslint-disable-next-line no-console
+  console.log(params);
+
   return (
     <div className="page">
       <Header />
